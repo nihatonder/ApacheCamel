@@ -1,0 +1,29 @@
+{
+  "namespace": "io.axual.client.example.schema",
+  "doc": "Contains the setting to generate an ApplicationLogAlert",
+  "name": "ApplicationLogAlertSetting",
+  "type": "record",
+  "fields": [
+    {
+      "doc": "The logging application to respond to",
+      "name": "source",
+      "type": "string"
+    },
+    {
+      "doc": "The Alert levels to respond to",
+      "name": "logLevels",
+      "type": {
+        "type": "array",
+        "items": "ApplicationLogLevel"
+      }
+    },
+    {
+      "doc": "The addresses to send the alert to",
+      "name": "addresses",
+      "type": {
+        "type": "array",
+        "items": "string"
+      }
+    }
+  ]
+}

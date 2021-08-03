@@ -1,0 +1,31 @@
+{
+  "namespace": "io.axual.client.example.schema",
+  "doc": "Identification of an application",
+  "name": "Application",
+  "type": "record",
+  "fields": [
+    {
+      "doc": "The name of the application",
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "doc": "(Optional) The application version",
+      "name": "version",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "doc": "The owner of the application",
+      "name": "owner",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
+  ]
+}

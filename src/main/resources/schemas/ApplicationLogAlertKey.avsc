@@ -1,0 +1,18 @@
+{
+  "namespace": "io.axual.client.example.schema",
+  "doc": "Identification of am ApplicationLogEvent system",
+  "name": "ApplicationLogAlertKey",
+  "type": "record",
+  "fields": [
+    {
+      "doc": "The name of the application generating the LogEvent",
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "doc": "The address to send the alert to",
+      "name": "address",
+      "type": "string"
+    }
+  ]
+}

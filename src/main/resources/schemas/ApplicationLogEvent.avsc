@@ -1,0 +1,36 @@
+{
+  "namespace": "io.axual.client.example.schema",
+  "doc": "Generic application log event",
+  "name": "ApplicationLogEvent",
+  "type": "record",
+  "fields": [
+    {
+      "doc": "Timestamp of the event",
+      "name": "timestamp",
+      "type": "long"
+    },
+    {
+      "doc": "The application that sent the event",
+      "name": "source",
+      "type": "Application"
+    },
+    {
+      "doc": "The application context, contains application-specific key-value pairs",
+      "name": "context",
+      "type": {
+        "type": "map",
+        "values": "string"
+      }
+    },
+    {
+      "doc": "The log level, being either DEBUG, INFO, WARN or ERROR",
+      "name": "level",
+      "type": "ApplicationLogLevel"
+    },
+    {
+      "doc": "The log message",
+      "name": "message",
+      "type": "string"
+    }
+  ]
+}

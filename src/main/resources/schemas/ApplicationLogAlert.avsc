@@ -1,0 +1,33 @@
+{
+  "namespace": "io.axual.client.example.schema",
+  "doc": "Contains the all the settings to generate an ApplicationLogAlert",
+  "name": "ApplicationLogAlert",
+  "type": "record",
+  "fields": [
+    {
+      "doc": "Timestamp of the event",
+      "name": "timestamp",
+      "type": "long"
+    },
+    {
+      "doc": "The application that generated this settings object",
+      "name": "source",
+      "type": "Application"
+    },
+    {
+      "doc": "The alerts are for log events using this application name",
+      "name": "target",
+      "type": "string"
+    },
+    {
+      "doc": "The relevant alert setting",
+      "name": "setting",
+      "type": "ApplicationLogAlertSetting"
+    },
+    {
+      "doc": "The relevant application log",
+      "name": "logEvent",
+      "type": "ApplicationLogEvent"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+spring:
+  profiles:
+    active: dev
+camel:
+  springboot:
+    shutdownTimeout: 1
+    health.indicator.enabled: true
+management.security.enabled: false
+
+info.app.name: Spring boiler plate
+info.app.description: This is a Spring boot boiler plate code.
+info.app.version: 1.0.0
+
+---
+
+spring:
+  profiles: mock
+---
+
+spring:
+  profiles: dev
+
+---
+
+spring:
+  profiles: stage
+---
+
+spring:
+  profiles: prod
+
+---

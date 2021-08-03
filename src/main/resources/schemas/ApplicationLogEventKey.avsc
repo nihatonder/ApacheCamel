@@ -1,0 +1,13 @@
+{
+  "namespace": "io.axual.client.example.schema",
+  "doc": "Identification of am ApplicationLogEvent system",
+  "name": "ApplicationLogEventKey",
+  "type": "record",
+  "fields": [
+    {
+      "doc": "The name of the application generating the LogEvent",
+      "name": "name",
+      "type": "string"
+    }
+  ]
+}
